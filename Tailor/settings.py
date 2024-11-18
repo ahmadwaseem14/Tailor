@@ -40,7 +40,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ["192.168.0.104",'127.0.0.1',"192.168.0.103","192.168.0.102","192.168.0.101","192.168.0.106","fanzer.versel.app"]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
