@@ -40,7 +40,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["192.168.0.104",'127.0.0.1',"192.168.0.103","192.168.0.102","192.168.0.101","192.168.0.106",".versel.app"]
 
 
 # Application definition
@@ -61,8 +61,6 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-        'whitenoise.middleware.WhiteNoiseMiddleware',  # Add WhiteNoise here
-
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -73,8 +71,6 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'Tailor.urls'
-STATIC_ROOT = BASE_DIR / 'staticfiles'
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 TEMPLATES = [
     {
@@ -98,6 +94,7 @@ WSGI_APPLICATION = 'Tailor.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
+
 
 
 # Password validation
@@ -134,17 +131,16 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-
+STATIC_URL = 'static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles' 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'staticfiles'),
+    os.path.join(BASE_DIR, 'static'),
 ]
-
-
 EMAIL_BACKEND = config('EMAIL_BACKEND')
 EMAIL_HOST = config('EMAIL_HOST')
 EMAIL_PORT = config('EMAIL_PORT', cast=int)

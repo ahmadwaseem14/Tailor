@@ -1,0 +1,25 @@
+<svg width="164" height="164" viewBox="0 0 164 164" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1128_1056)">
+<path d="M95.317 47.2411L154.639 119.205L62.6558 134.598L3.33063 62.6331L95.317 47.2411Z" fill="#E6FAE3" stroke="#2F2B24" stroke-width="2" stroke-linejoin="bevel"/>
+<g filter="url(#filter0_f_1128_1056)">
+<path d="M92.5447 54.3246L138.761 110.139L67.2633 121.943L21.0432 66.1267L92.5447 54.3246Z" fill="#00B261"/>
+</g>
+<path d="M103.526 25.2865L162.848 97.2502L70.8648 112.643L11.5396 40.6785L103.526 25.2865Z" fill="#E6FAE3" stroke="#2F2B24" stroke-width="2" stroke-linejoin="bevel"/>
+<path d="M162.249 97.0239L154.084 118.862" stroke="#2F2B24" stroke-width="2" stroke-linejoin="bevel"/>
+<path d="M70.8652 112.644L62.7005 134.481" stroke="#2F2B24" stroke-width="2" stroke-linejoin="bevel"/>
+<path d="M11.9834 40.9751L3.81752 62.8158" stroke="#2F2B24" stroke-width="2" stroke-linejoin="bevel"/>
+<path d="M90.5747 45.9309L54.5061 51.8467C49.6666 52.6305 48.2803 56.3382 51.4185 60.1048L68.9787 81.2692C72.1169 85.0357 78.567 87.4473 83.3782 86.6529L92.5102 85.1689L109.129 92.9831L110.343 82.2318L119.475 80.7478C124.315 79.964 125.701 76.2563 122.563 72.4897L105.003 51.3253C101.864 47.5587 95.4142 45.1471 90.603 45.9415L90.5747 45.9309Z" stroke="#2F2B23" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M77.8878 64.6864C74.2813 55.014 87.6603 57.2629 91.6781 62.1267C95.6959 66.9905 90.2237 68.6903 87.412 69.656" stroke="#2F2B23" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M93.4326 73.4756L96.819 77.527" stroke="#2F2B23" stroke-width="2" stroke-miterlimit="10"/>
+</g>
+<defs>
+<filter id="filter0_f_1128_1056" x="10.9096" y="44.1914" width="137.984" height="87.8848" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="5.06667" result="effect1_foregroundBlur_1128_1056"/>
+</filter>
+<clipPath id="clip0_1128_1056">
+<rect width="164" height="164" fill="white"/>
+</clipPath>
+</defs>
+</svg>

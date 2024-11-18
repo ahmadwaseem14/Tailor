@@ -1,0 +1,20 @@
+<svg width="103" height="103" viewBox="0 0 103 103" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M69.7959 51.1241L44.898 8L20.0001 51.1241L44.898 94.25L69.7959 51.1241Z" fill="#E6FAE3" stroke="#2F2B24" stroke-width="2" stroke-linejoin="bevel"/>
+<g filter="url(#filter0_f_1101_13008)">
+<path d="M65.8438 51.1865L46.484 17.6366L27.1242 51.1865L46.484 84.7388L65.8438 51.1865Z" fill="#00B261"/>
+</g>
+<path d="M82.3105 51.1241L57.4126 8L32.5147 51.1241L57.4126 94.25L82.3105 51.1241Z" fill="#E6FAE3" stroke="#2F2B24" stroke-width="2" stroke-linejoin="bevel"/>
+<path d="M57.4141 8.33997L44.966 8.33997" stroke="#2F2B24" stroke-width="2" stroke-linejoin="bevel"/>
+<path d="M32.5146 51.124L20.0666 51.124" stroke="#2F2B24" stroke-width="2" stroke-linejoin="bevel"/>
+<path d="M57.3477 93.9706L44.8978 93.9706" stroke="#2F2B24" stroke-width="2" stroke-linejoin="bevel"/>
+<path d="M59.1011 41.9602L57.5902 39.3436C56.1406 36.8376 53.8066 36.4445 52.2219 38.6925C50.4161 41.2722 50.3178 45.9157 51.9393 48.7166L53.5732 51.542C55.1701 54.306 56.2634 57.8193 56.7302 61.6521L57.1602 65.2022L67 48.1761L64.9485 47.4267C62.7373 46.6282 60.7104 44.7242 59.1134 41.9602H59.1011Z" stroke="#2F2B23" stroke-width="2" stroke-linejoin="round"/>
+<path d="M64.2471 53.3234C65.3773 55.2889 65.3773 58.4828 64.2471 60.4483C63.1169 62.4138 61.2743 62.4138 60.1318 60.4483" stroke="#2F2B23" stroke-width="2" stroke-linejoin="round"/>
+<path d="M50.857 45.0558L47.6754 54.6622C47.356 55.6327 47.442 56.8611 47.9088 57.6473L48.4862 58.6423C49.0512 59.6128 49.948 59.6128 50.5131 58.6423L54.1738 52.2913" stroke="#2F2B23" stroke-width="2" stroke-linejoin="round"/>
+<defs>
+<filter id="filter0_f_1101_13008" x="16.9907" y="7.50326" width="58.9864" height="87.369" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="5.06667" result="effect1_foregroundBlur_1101_13008"/>
+</filter>
+</defs>
+</svg>

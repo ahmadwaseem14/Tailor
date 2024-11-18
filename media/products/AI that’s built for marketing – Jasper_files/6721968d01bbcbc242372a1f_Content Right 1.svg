@@ -1,0 +1,18 @@
+<svg width="103" height="103" viewBox="0 0 103 103" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M33.5146 51.2991L58.4126 8.17496L83.3105 51.2991L58.4126 94.425L33.5146 51.2991Z" fill="#E6FAE3" stroke="#2F2B24" stroke-width="2" stroke-linejoin="bevel"/>
+<g filter="url(#filter0_f_1080_564)">
+<path d="M37.4668 51.3614L56.8266 17.8115L76.1864 51.3614L56.8266 84.9137L37.4668 51.3614Z" fill="#00B261"/>
+</g>
+<path d="M21 51.2991L45.8979 8.17496L70.7958 51.2991L45.8979 94.425L21 51.2991Z" fill="#E6FAE3" stroke="#2F2B24" stroke-width="2" stroke-linejoin="bevel"/>
+<path d="M45.8965 8.51489L58.3446 8.51489" stroke="#2F2B24" stroke-width="2" stroke-linejoin="bevel"/>
+<path d="M70.7959 51.299L83.244 51.299" stroke="#2F2B24" stroke-width="2" stroke-linejoin="bevel"/>
+<path d="M45.9629 94.1455L58.4127 94.1455" stroke="#2F2B24" stroke-width="2" stroke-linejoin="bevel"/>
+<path d="M54.878 50.5688H48.1778M46.5027 43.8015C48.6579 47.5425 48.6579 53.6062 46.5027 57.336C44.3475 61.0658 40.841 61.0769 38.6858 57.336C36.5305 53.595 36.5305 47.5313 38.6858 43.8015C40.841 40.0717 44.3475 40.0606 46.5027 43.8015Z" stroke="#2F2B23" stroke-width="2" stroke-linecap="square"/>
+<defs>
+<filter id="filter0_f_1080_564" x="27.3335" y="7.67816" width="58.9864" height="87.3689" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="5.06667" result="effect1_foregroundBlur_1080_564"/>
+</filter>
+</defs>
+</svg>
