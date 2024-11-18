@@ -1,0 +1,949 @@
+{% extends 'hbase.html' %}
+{% load static %}
+
+{% block content %}
+
+
+{% include 'navbar.html' %}
+<style>
+	.homepage-bg-3 {
+  background-image: url('{{ homepage_info.background_image_1.url }}');
+}
+
+.homepage-bg-2 {
+  background-image: url('{{ homepage_info.background_image_1.url }}');
+}
+
+.homepage-bg-1 {
+  background-image: url('{{ homepage_info.background_image_1.url }}');
+}
+.testimonial:after {
+    position: absolute;
+    top: -0 !important;
+    left: 0;
+    content: " ";
+    background: url(img/testimonial.bg-top.png);
+    background-size: 100% 100px;
+    width: 100%;
+    height: 100px;
+    float: left;
+    z-index: 99;
+}
+
+.testimonial {
+    min-height: 375px;
+    position: relative;
+    background: url("/static/img/main2.png");
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-position: center;
+        background-size: cover;
+}
+#testimonial4 .carousel-inner:hover{
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+#testimonial4 .carousel-inner:active{
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+#testimonial4 .carousel-inner .item{
+  overflow: hidden;
+}
+
+.testimonial4_indicators .carousel-indicators{
+  left: 0;
+  margin: 0;
+  width: 100%;
+  font-size: 0;
+  height: 20px;
+  bottom: 15px;
+  padding: 0 5px;
+  cursor: e-resize;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: absolute;
+  text-align: center;
+  white-space: nowrap;
+}
+.testimonial4_indicators .carousel-indicators li{
+  padding: 0;
+  width: 14px;
+  height: 14px;
+  border: none;
+  text-indent: 0;
+  margin: 2px 3px;
+  cursor: pointer;
+  display: inline-block;
+  background: #ffffff;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+.testimonial4_indicators .carousel-indicators .active{
+  padding: 0;
+  width: 14px;
+  height: 14px;
+  border: none;
+  margin: 2px 3px;
+  background-color: #9dd3af;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+.testimonial4_indicators .carousel-indicators::-webkit-scrollbar{
+  height: 3px;
+}
+.testimonial4_indicators .carousel-indicators::-webkit-scrollbar-thumb{
+  background: #eeeeee;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+.testimonial4_control_button .carousel-control{
+  top: 175px;
+  opacity: 1;
+  width: 40px;
+  bottom: auto;
+  height: 40px;
+  font-size: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  overflow: hidden;
+  line-height: 38px;
+  text-shadow: none;
+  text-align: center;
+  position: absolute;
+  background: transparent;
+  border: 2px solid #ffffff;
+  text-transform: uppercase;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: all 0.6s cubic-bezier(0.3,1,0,1);
+  transition: all 0.6s cubic-bezier(0.3,1,0,1);
+}
+.testimonial4_control_button .carousel-control.left{
+  left: 7%;
+  top: 50%;
+  right: auto;
+}
+.testimonial4_control_button .carousel-control.right{
+  right: 7%;
+  top: 50%;
+  left: auto;
+}
+.testimonial4_control_button .carousel-control.left:hover,
+.testimonial4_control_button .carousel-control.right:hover{
+  color: #000;
+  background: #fff;
+  border: 2px solid #fff;
+}
+
+.testimonial4_header{
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 550px;
+  display: block;
+  margin: 30px auto;
+  text-align: center;
+  position: relative;
+}
+.testimonial4_header h4{
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.testimonial4_slide{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 70%;
+  margin: auto;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+}
+.testimonial4_slide img {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 136px;
+    height: 136px;
+    margin: auto;
+    display: block;
+    color: #f2f2f2;
+    font-size: 18px;
+    line-height: 46px;
+    text-align: center;
+    position: relative;
+    border-radius: 50%;
+    box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+    -o-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+    -webkit-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+}
+.testimonial4_slide p {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 40px 0 20px 0;
+}
+.testimonial4_slide h4 {
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.testimonial .carousel {
+	padding-bottom:50px;
+}
+.testimonial .carousel-control-next-icon, .testimonial .carousel-control-prev-icon {
+    width: 35px;
+    height: 35px;
+}
+/* ------testimonial  close-------*/
+	.ix {
+  font-size: 4em !important;
+  margin-top: 10%;
+  color: BLACK;
+}
+
+.project{
+	font-family: sans-serif;
+}
+
+.intro {
+  height: auto;
+  min-height: 70vh;
+  text-align: center;
+  background-color: BLACK;
+}
+
+.how-it-works {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.how-it-works h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.complete{
+	width: 80%;;
+}
+.step {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.step:hover {
+    transform: translateY(-5px);
+}
+
+.step img  {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.step h2 {
+    font-size: 20px;
+	line-height: 1.6rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.step p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimonial4_slide p{
+        font-size: 2.8vw;
+    }
+    .step {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .how-it-works h1 {
+        font-size: 28px;
+    }
+
+    .step {
+        width: 100%;
+    }
+
+    .step h2 {
+        font-size: 18px;
+    }
+
+    .step p {
+        font-size: 12px;
+    }
+}
+	.section-head {
+  margin-bottom: 60px;
+}
+.section-head h4 {
+  position: relative;
+  padding:0;
+  color:BLACK;
+  line-height: 1;
+  letter-spacing:0.3px;
+  font-size: 34px;
+  font-weight: 700;  
+  text-align:center;
+  text-transform:none;
+  margin-bottom:30px;
+}
+.section-head h4:before {
+  content: '';
+  width: 60px;
+  height: 3px;
+  background: BLACK;
+  position: absolute;
+  left: 0px;
+  bottom: -10px;
+  right:0;  
+  margin:0 auto;
+}
+.section-head h4 span {
+  font-weight: 700;
+  padding-bottom: 5px;
+  color:#2f2f2f
+}
+p.service_text{
+  color:#cccccc !important;
+  font-size:16px;
+  line-height:28px;
+  text-align:center;    
+}
+.section-head p, p.awesome_line{
+  color:#818181;
+  font-size:16px;
+  line-height:28px;
+  text-align:center;  
+}
+
+.extra-text {
+    font-size:34px;
+    font-weight: 700;
+    color:#2f2f2f;
+    margin-bottom: 25px;
+    position:relative;
+    text-transform: none;
+}
+.extra-text::before {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: BLACK;
+    position: absolute;
+    left: 0px;
+    bottom: -10px;
+    right: 0;
+    margin: 0 auto;
+}
+.extra-text span {
+    font-weight: 700;
+    color:BLACK;
+}
+.item {
+    background: #fff;
+    text-align: center;
+    padding: 30px 25px;
+    -webkit-box-shadow:0 0px 25px rgba(0, 0, 0, 0.07);
+    box-shadow:0 0px 25px rgba(0, 0, 0, 0.07);
+    border-radius: 20px;
+    border:5px solid rgba(0, 0, 0, 0.07);
+    margin-bottom: 30px;
+    -webkit-transition: all .5s ease 0;
+    transition: all .5s ease 0;
+    transition: all 0.5s ease 0s;
+}
+.item:hover{
+    background:BLACK;
+    box-shadow:0 8px 20px 0px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all .5s ease 0;
+    transition: all .5s ease 0;
+    transition: all 0.5s ease 0s;
+}
+.item:hover .item, .item:hover span.icon{
+    background:#fff;
+    border-radius:10px;
+    -webkit-transition: all .5s ease 0;
+    transition: all .5s ease 0;
+    transition: all 0.5s ease 0s;
+}
+.item:hover h6, .item:hover p{
+    color:#fff;
+    -webkit-transition: all .5s ease 0;
+    transition: all .5s ease 0;
+    transition: all 0.5s ease 0s;
+}
+.item .icon {
+    font-size: 40px;
+    margin-bottom:25px;
+    color: BLACK;   
+    width: 90px;
+    height: 90px;
+    line-height: 96px;
+    border-radius: 50px;
+}
+.item .feature_box_col_one{
+    background:rgba(247, 198, 5, 0.20);
+    color:BLACK
+}
+.item .feature_box_col_two{
+    background:rgba(255, 77, 28, 0.15);
+    color:BLACK
+}
+.item .feature_box_col_three{
+    background:rgba(0, 147, 38, 0.15);
+    color:BLACK
+}
+.item .feature_box_col_four{
+    background:rgba(0, 108, 255, 0.15);
+    color:BLACK
+}
+.item .feature_box_col_five{
+    background:rgba(146, 39, 255, 0.15);
+    color:BLACK
+}
+.item .feature_box_col_six{
+    background:rgba(23, 39, 246, 0.15);
+    color:BLACK
+}
+.item p{
+    font-size:15px;
+    line-height:26px;
+}
+.item h6 {
+    margin-bottom:20px;
+    color:#2f2f2f;
+}
+.mission p {
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 500;
+}
+.mission i {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: BLACK;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 25px;
+}
+.mission .small-text {
+    margin-left: 10px;
+    font-size: 13px;
+    color: #666;
+}
+.skills {
+    padding-top:0px;
+}
+.skills .prog-item {
+    margin-bottom: 25px;
+}
+.skills .prog-item:last-child {
+    margin-bottom: 0;
+}
+.skills .prog-item p {
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.skills .prog-item .skills-progress {
+    width: 100%;
+    height: 10px;
+    background: #e0e0e0;
+    border-radius:20px;
+    position: relative;
+}
+.skills .prog-item .skills-progress span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: BLACK;
+    width: 10%;
+    border-radius: 10px;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+.skills .prog-item .skills-progress span:after {
+    content: attr(data-value);
+    position: absolute;
+    top: -5px;
+    right: 0;
+    font-size: 10px;
+    font-weight:600;    
+    color: #fff;
+    background:rgba(0, 0, 0, 0.9);
+    padding: 3px 7px;
+    border-radius: 30px;
+}
+</style>
+	<!-- home page slider -->
+	<div class="homepage-slider">
+        <!-- single home slider -->
+        <div class="single-homepage-slider" style="background-image: url('{{ homepage_info.image1.url }}');">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1 text-center">
+                        <div class="hero-text">
+                            <div class="hero-text-tablecell">
+                                <h1>{{ homepage_info.heading1 }}</h1>
+                                <p class="subtitle">Expert Tailoring</p>
+                                <div class="hero-btns">
+                                    <a href="/shop/" class="boxed-btn">Book Now</a>
+                                    <a href="/contact/" class="bordered-btn">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- single home slider -->
+        <div class="single-homepage-slider" style="background-image: url('{{ homepage_info.image2.url }}');">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1 text-center">
+                        <div class="hero-text">
+                            <div class="hero-text-tablecell">
+                                <h1>{{ homepage_info.heading2 }}</h1>
+                                <p class="subtitle">Expert Tailoring</p>
+                                <div class="hero-btns">
+                                    <a href="/shop/" class="boxed-btn">Book Now</a>
+                                    <a href="/contact/" class="bordered-btn">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- single home slider -->
+        <div class="single-homepage-slider" style="background-image: url('{{ homepage_info.image3.url }}');">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1 text-center">
+                        <div class="hero-text">
+                            <div class="hero-text-tablecell">
+                                <h1>{{ homepage_info.heading3 }}</h1>
+                                <p class="subtitle">Expert Tailoring</p>
+                                <div class="hero-btns">
+                                    <a href="/shop/" class="boxed-btn">Book Now</a>
+                                    <a href="/contact/" class="bordered-btn">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+	<div class="how-it-works">
+		<div class="row">
+			<div class="col-lg-8 offset-lg-2 text-center">
+				<div class="section-title">    
+					<h3><span class="orange-text">How</span> It Works</h3>
+					<p>Our process is straightforward and hassle-free, making us the best choice for online tailoring in Pakistan.</p>
+				</div>
+			</div>
+		</div>
+		<div class="steps">
+			<div class="step">
+				<img src="/static/img/online-order.png" alt="Place Your Order">
+				<h2>PLACE YOUR ORDER</h2>
+				<p>Order online to schedule a home tailoring service. Choose your design from our product catalog and book your appointment easily.</p>
+			</div>
+			<div class="step">
+				<img src="/static/img/pick.png" alt="Picking Up Your Dress Material">
+				<h2>Picking Up Your Dress Material</h2>
+				<p>The rider will come at the scheduled time to collect your dress material and the sample dress that fits you perfectly, or to take measurements if needed.</p>
+			</div>
+			<div class="step">
+				<img src="/static/img/sewing-machine.png" alt="Stitch In Progress">
+				<h2>Currently Being Expertly Stitched</h2>
+				<p>Our expert tailors will stitch your dress based on your selected design or one from our product design catalog.</p>
+			</div>
+			<div class="step">
+				<img style="width: 70px; height: 70px;" src="/static/img/free-shipping.png" alt="Free Delivery in 7 Days">
+				<h2>FREE DELIVERY IN 7 DAYS</h2>
+				<p>We’ll ensure your custom-tailored dress and sample dress are carefully packed and securely delivered to you within 7-10 days.</p>
+			</div>
+			<div class="step">
+				<img style="width: 70px; height: 70px;" src="/static/img/cash-on-delivery.png" alt="Cash On Delivery">
+				<h2>CASH ON DELIVERY</h2>
+				<p>Payment can be made either in cash upon delivery or through another payment method of your choice.</p>
+			</div>
+		</div>
+	</div>
+    </div>
+	  <div class="abt-section mb-150" style="margin-top:50px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-12">
+					<div class="abt-bg">
+						
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-12">
+					<div class="abt-text">
+						<p class="top-sub">Online Tailoring</p>
+						<h2>We are <span class="orange-text">FANZER</span></h2>
+						<p>At FANZER, we are passionate about crafting high-quality garments that reflect our clients' unique styles and personalities. Our journey began with a simple vision: to provide exceptional tailoring services that combine traditional craftsmanship with modern techniques.
+
+							We believe that every piece of clothing tells a story, and our expert tailors are dedicated to bringing that story to life through meticulous attention to detail and an unwavering commitment to excellence. Whether it's a custom suit, a stunning dress, or any other garment, we take pride in delivering flawless fits that make our clients feel confident and comfortable.
+							
+							Our team understands the importance of personalized service, and we work closely with each client to ensure their vision is realized. From the initial consultation to the final fitting, we strive to create an enjoyable and seamless experience. At FANZER, we are not just tailoring clothes; we are crafting memories and celebrating individuality.</p>
+						
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente facilis illo repellat veritatis minus, et labore minima mollitia qui ducimus.</p>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="feat bg-gray pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="section-head col-sm-12">
+                    <h4><span>Why Choose</span> Us?</h4>
+                    <p>When you choose us, you benefit from over a decade of expertise in tailoring. We understand the nuances of the industry and excel in delivering exceptional service. Our commitment to custom designs, high-quality fabrics, and unparalleled customer satisfaction sets us apart.</p>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="item">
+                        <span class="icon feature_box_col_one"><i style="padding: 3px" class="fa fa-clock" aria-hidden="true"></i></span>
+                        <h6>Timely Delivery</h6>
+                        <p>We respect your time and ensure timely delivery of your custom garments without compromising quality.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="item">
+                        <span class="icon feature_box_col_two"><img style="width: 45px;height: 45px; padding: 3px;" src="{% static 'img/money.png' %}" alt=""></span>
+                        <h6>Affordable Prices</h6>
+                        <p>Quality tailoring doesn’t have to break the bank. We offer competitive pricing for all our services.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="item">
+                        <span class="icon feature_box_col_three"><img style="width: 45px;height: 45px; padding: 3px;" src="{% static 'img/measure.png' %}" alt=""></i></span>
+                        <h6>Custom Fit</h6>
+                        <p>We ensure each garment is tailored to your specific measurements for a perfect fit every time.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="item">
+                        <span class="icon feature_box_col_four"><img style="width: 45px;height: 45px; padding: 3px;" src="{% static 'img/fabric.png' %}" alt=""></span>
+                        <h6>Premium Quality Fabrics</h6>
+                        <p>Our selection of high-quality fabrics guarantees durability and elegance in every piece.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="item">
+                        <span class="icon feature_box_col_five"><img style="width: 55px;height: 55px;" src="{% static 'img/tailor.png' %} " alt=""></span>
+                        <h6>Expert Craftsmanship</h6>
+                        <p>Our skilled tailors combine traditional techniques with modern design for impeccable results.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="item">
+                        <span class="icon feature_box_col_six"><img style="width: 45px;height: 45px; padding: 3px;" src="{% static 'img/call-center.png' %}" alt=""></span>
+                        <h6>24 x 7 Customer Support</h6>
+                        <p>Our customer support team is always ready to assist you with any inquiries or concerns.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+	
+	<!-- features list section -->
+	
+	
+	<!-- end product section -->
+
+	
+    <section class="testimonial text-center">
+        <div class="container">
+
+			<div class="section-title section-titles">    
+				<h3 style="color: #ddd;"><span class="orange-text"></span>Testimonial</h3>
+			</div>
+            <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
+             
+                <div class="carousel-inner" role="listbox">
+                    
+                    <div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <img src="{% static 'img/woman.png' %}" class="img-circle img-responsive" /><p>FANZER exceeded all my expectations with their outstanding tailoring services. I was impressed by their dedication to getting every detail right, from the initial consultation to the final fitting. The end result was a beautifully crafted garment that perfectly matched my specifications. Their expertise and customer-focused approach make them a top choice for anyone looking for high-quality tailoring. </p>
+                            <h4>Sadia Hafeez</h4>
+                        </div>
+                    </div>
+					<div class="carousel-item active">
+                        <div class="testimonial4_slide">
+                            <img src="{% static 'img/man.png' %}" class="img-circle img-responsive" />
+                            <p>Working with FANZER has been a fantastic experience. They brought my vision to life with their expert craftsmanship and personalized service. The team carefully listened to my preferences and delivered a garment that not only fits impeccably but also showcases their exceptional skill. Their commitment to excellence is evident, and I would gladly recommend their services to anyone in need of top-notch tailoring. </p>
+                            <h4>Umer Shoukat</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <img src="{% static 'img/woman1.png' %}" class="img-circle img-responsive" />
+                            <p>I had the pleasure of using FANZER for a custom suit, and the experience was exceptional. From the moment I placed my order, the team was professional and attentive. They meticulously crafted a suit that fits perfectly and reflects my personal style. Their attention to detail and commitment to quality are evident in every stitch. I highly recommend their services to anyone seeking tailored perfection. </p>
+                            <h4>Madiha Illyas</h4>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#testimonial4" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+	<!-- end testimonail-section -->
+	
+	<!-- advertisement section -->
+
+	
+
+	<!-- logo carousel -->
+	<div class="logo-carousel-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="logo-carousel-inner">
+						<div class="single-logo-item">
+							<img src="assets/img/company-logos/1.png" alt="">
+						</div>
+						<div class="single-logo-item">
+							<img src="assets/img/company-logos/2.png" alt="">
+						</div>
+						<div class="single-logo-item">
+							<img src="assets/img/company-logos/3.png" alt="">
+						</div>
+						<div class="single-logo-item">
+							<img src="assets/img/company-logos/4.png" alt="">
+						</div>
+						<div class="single-logo-item">
+							<img src="assets/img/company-logos/5.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	{% include 'footer.html' %}
+    <script>
+        (function ($) {
+    "use strict";
+    
+    $(document).ready(function($){
+        
+        // testimonial sliders
+        $(".testimonial-sliders").owlCarousel({
+            items: 1,
+            loop: true,
+            autoplay: true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:false
+                },
+                600:{
+                    items:1,
+                    nav:false
+                },
+                1000:{
+                    items:1,
+                    nav:false,
+                    loop:true
+                }
+            }
+        });
+    
+        // homepage slider
+        $(".homepage-slider").owlCarousel({
+            items: 1,
+            loop: true,
+            autoplay: true,
+            nav: true,
+            dots: false,
+            navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+            responsive:{
+                0:{
+                    items:1,
+                    nav:false,
+                    loop:true
+                },
+                600:{
+                    items:1,
+                    nav:true,
+                    loop:true
+                },
+                1000:{
+                    items:1,
+                    nav:true,
+                    loop:true
+                }
+            }
+        });
+    
+        // logo carousel
+        $(".logo-carousel-inner").owlCarousel({
+            items: 4,
+            loop: true,
+            autoplay: true,
+            margin: 30,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:false
+                },
+                600:{
+                    items:3,
+                    nav:false
+                },
+                1000:{
+                    items:4,
+                    nav:false,
+                    loop:true
+                }
+            }
+        });
+    
+        // count down
+        if($('.time-countdown').length){  
+            $('.time-countdown').each(function() {
+            var $this = $(this), finalDate = $(this).data('countdown');
+            $this.countdown(finalDate, function(event) {
+                var $this = $(this).html(event.strftime('' + '<div class="counter-column"><div class="inner"><span class="count">%D</span>Days</div></div> ' + '<div class="counter-column"><div class="inner"><span class="count">%H</span>Hours</div></div>  ' + '<div class="counter-column"><div class="inner"><span class="count">%M</span>Mins</div></div>  ' + '<div class="counter-column"><div class="inner"><span class="count">%S</span>Secs</div></div>'));
+            });
+         });
+        }
+    
+        // projects filters isotop
+        $(".product-filters li").on('click', function () {
+            
+            $(".product-filters li").removeClass("active");
+            $(this).addClass("active");
+    
+            var selector = $(this).attr('data-filter');
+    
+            $(".product-lists").isotope({
+                filter: selector,
+            });
+            
+        });
+        
+        // isotop inner
+        $(".product-lists").isotope();
+    
+        // magnific popup
+        $('.popup-youtube').magnificPopup({
+            disableOn: 700,
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+            fixedContentPos: false
+        });
+    
+        // light box
+        $('.image-popup-vertical-fit').magnificPopup({
+            type: 'image',
+            closeOnContentClick: true,
+            mainClass: 'mfp-img-mobile',
+            image: {
+                verticalFit: true
+            }
+        });
+    
+        // homepage slides animations
+        $(".homepage-slider").on("translate.owl.carousel", function(){
+            $(".hero-text-tablecell .subtitle").removeClass("animated fadeInUp").css({'opacity': '0'});
+            $(".hero-text-tablecell h1").removeClass("animated fadeInUp").css({'opacity': '0', 'animation-delay' : '0.3s'});
+            $(".hero-btns").removeClass("animated fadeInUp").css({'opacity': '0', 'animation-delay' : '0.5s'});
+        });
+    
+        $(".homepage-slider").on("translated.owl.carousel", function(){
+            $(".hero-text-tablecell .subtitle").addClass("animated fadeInUp").css({'opacity': '0'});
+            $(".hero-text-tablecell h1").addClass("animated fadeInUp").css({'opacity': '0', 'animation-delay' : '0.3s'});
+            $(".hero-btns").addClass("animated fadeInUp").css({'opacity': '0', 'animation-delay' : '0.5s'});
+        });
+    
+       
+    
+        // stikcy js
+        $("#sticker").sticky({
+            topSpacing: 0
+        });
+    
+        //mean menu
+        $('.main-menu').meanmenu({
+            meanMenuContainer: '.mobile-menu',
+            meanScreenWidth: "992"
+        });
+        
+         // search form
+        $(".search-bar-icon").on("click", function(){
+            $(".search-area").addClass("search-active");
+        });
+    
+        $(".close-btn").on("click", function() {
+            $(".search-area").removeClass("search-active");
+        });
+    
+    });
+    
+    
+    jQuery(window).on("load",function(){
+        jQuery(".loader").fadeOut(1000);
+    });
+    
+    
+    }(jQuery));
+        </script>
+{% endblock %}

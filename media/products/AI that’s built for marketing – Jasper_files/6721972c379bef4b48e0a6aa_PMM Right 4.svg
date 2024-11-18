@@ -1,0 +1,18 @@
+<svg width="212" height="212" viewBox="0 0 212 212" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M106.091 62.9818L6 120.64L106.091 178.298L206.187 120.64L106.091 62.9818Z" fill="#E6FAE3" stroke="#2F2B24" stroke-width="2" stroke-linejoin="bevel"/>
+<g filter="url(#filter0_f_1080_424)">
+<path d="M106.12 72.1346L28.25 116.968L106.12 161.801L183.995 116.968L106.12 72.1346Z" fill="#00B261"/>
+</g>
+<path d="M106.091 34L6 91.6584L106.091 149.317L206.187 91.6584L106.091 34Z" fill="#E6FAE3" stroke="#2F2B24" stroke-width="2" stroke-linejoin="bevel"/>
+<path d="M6.78906 91.6561V120.483" stroke="#2F2B24" stroke-width="2" stroke-linejoin="bevel"/>
+<path d="M106.091 149.317V178.144" stroke="#2F2B24" stroke-width="2" stroke-linejoin="bevel"/>
+<path d="M205.538 91.8098V120.641" stroke="#2F2B24" stroke-width="2" stroke-linejoin="bevel"/>
+<path d="M97.1925 96.4724V87.5276M97.1925 96.4724C102.039 97.7545 107.088 98.7683 112.283 99.454C112.283 99.454 106.508 106.103 99.7172 106.908C93.623 107.624 84.6269 103.926 84.6269 103.926L97.1925 96.4724ZM97.1925 87.5276C102.01 86.2753 107.001 85.2914 112.138 84.6354C119.741 83.5918 127.692 83.7409 135.179 85.023C142.667 86.3051 149.486 88.7202 155 92.0298C148.151 96.0848 134.193 102.048 112.283 99.4839M97.1925 87.5276L84.6269 80.0735C84.6269 80.0735 93.623 76.3763 99.7172 77.0919C106.508 77.897 112.283 84.546 112.283 84.546M74.586 87.5276C67.6503 87.1698 57 92 57 92C57 92 67.6503 96.8302 74.586 96.4724C78.4747 96.2935 81.6959 94.3555 81.6669 92C81.6088 90.867 80.8833 89.7936 79.5774 88.9588C78.2715 88.1239 76.5013 87.617 74.586 87.5276Z" stroke="#2F2B23" stroke-width="2" stroke-linecap="round"/>
+<defs>
+<filter id="filter0_f_1080_424" x="18.1167" y="62.0013" width="176.011" height="109.933" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="5.06667" result="effect1_foregroundBlur_1080_424"/>
+</filter>
+</defs>
+</svg>

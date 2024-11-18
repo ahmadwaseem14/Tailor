@@ -1,0 +1,21 @@
+<svg width="103" height="103" viewBox="0 0 103 103" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M69.7959 51.1241L44.898 8L20.0001 51.1241L44.898 94.25L69.7959 51.1241Z" fill="#E6FAE3" stroke="#2F2B24" stroke-width="2" stroke-linejoin="bevel"/>
+<g filter="url(#filter0_f_1128_1138)">
+<path d="M65.8438 51.1867L46.484 17.6367L27.1242 51.1867L46.484 84.739L65.8438 51.1867Z" fill="#00B261"/>
+</g>
+<path d="M82.3105 51.1241L57.4126 8L32.5147 51.1241L57.4126 94.25L82.3105 51.1241Z" fill="#E6FAE3" stroke="#2F2B24" stroke-width="2" stroke-linejoin="bevel"/>
+<path d="M57.4141 8.33984L44.966 8.33984" stroke="#2F2B24" stroke-width="2" stroke-linejoin="bevel"/>
+<path d="M32.5146 51.124L20.0666 51.124" stroke="#2F2B24" stroke-width="2" stroke-linejoin="bevel"/>
+<path d="M57.3477 93.9707L44.8978 93.9707" stroke="#2F2B24" stroke-width="2" stroke-linejoin="bevel"/>
+<path d="M67 41.0783L61.2193 31.0726C60.3347 29.5474 58.9009 29.5474 58.0316 31.0726L46.1346 51.6635C45.25 53.1887 45.25 55.6749 46.1346 57.2001L54.8895 72.3611C55.7742 73.8863 57.2079 73.8863 58.0773 72.3611L67 56.9256V41.0783Z" stroke="#2F2B23" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M67 41.0786L63.2326 47.6067C62.7903 48.3845 62.7903 49.6352 63.2326 50.3979L67 56.9259" stroke="#2F2B23" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M58.6422 59.6261C57.2237 62.097 54.9053 62.097 53.4869 59.6261C52.0684 57.1552 52.0684 53.159 53.4869 50.6881C54.9053 48.2172 57.2237 48.2172 58.6422 50.6881C60.0607 53.159 60.0607 57.1552 58.6422 59.6261Z" stroke="#2F2B23" stroke-width="2" stroke-linejoin="round"/>
+<path d="M56.0654 61.6855V66.4748" stroke="#2F2B23" stroke-width="2" stroke-linejoin="round"/>
+<defs>
+<filter id="filter0_f_1128_1138" x="16.9907" y="7.50339" width="58.9864" height="87.3687" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="5.06667" result="effect1_foregroundBlur_1128_1138"/>
+</filter>
+</defs>
+</svg>

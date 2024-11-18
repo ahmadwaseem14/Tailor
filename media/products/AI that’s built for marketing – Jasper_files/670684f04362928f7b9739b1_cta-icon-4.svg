@@ -1,0 +1,30 @@
+<svg width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_46_5371)">
+<g clip-path="url(#clip1_46_5371)">
+<path d="M96.9238 61.5305L10.8628 145.587L126.688 178.091L212.754 94.0328L96.9238 61.5305Z" fill="#F5F0FC" stroke="#2F2B24" stroke-width="2" stroke-linejoin="bevel"/>
+<g filter="url(#filter0_f_46_5371)">
+<path d="M99.4074 70.6483L32.447 136.019L122.551 161.282L189.517 95.9097L99.4074 70.6483Z" fill="#9146FF"/>
+</g>
+<path d="M89.4433 32.2387L3.3823 116.295L119.208 148.799L205.273 64.741L89.4433 32.2387Z" fill="#F5F0FC" stroke="#2F2B24" stroke-width="2" stroke-linejoin="bevel"/>
+<path d="M3.38281 116.295L10.8234 145.433" stroke="#2F2B24" stroke-width="2" stroke-linejoin="bevel"/>
+<path d="M119.209 148.801L126.65 177.939" stroke="#2F2B24" stroke-width="2" stroke-linejoin="bevel"/>
+<path d="M205.312 64.8939L212.754 94.036" stroke="#2F2B24" stroke-width="2" stroke-linejoin="bevel"/>
+<path d="M95.562 75.5631L75.5691 95.0888C73.7855 96.8286 74.5562 99.847 76.9557 100.519L103.114 107.857C106.968 108.939 111.11 107.882 113.974 105.084L133.114 86.3924C135.026 84.5236 134.2 81.2878 131.625 80.5647L105.113 73.1241C101.721 72.1731 98.0832 73.102 95.562 75.5631Z" stroke="#2F2B24" stroke-width="2" stroke-linejoin="bevel"/>
+<path d="M76.1465 100.076L115.41 90.0499L118.168 100.852" stroke="#2F2B24" stroke-width="2" stroke-linejoin="bevel"/>
+<path d="M103.391 86.2632C106.061 85.5813 107.879 83.6717 107.452 81.9979C107.025 80.3241 104.513 79.52 101.843 80.2019C99.1726 80.8838 97.3543 82.7935 97.7817 84.4673C98.2092 86.1411 100.72 86.9451 103.391 86.2632Z" stroke="#2F2B24" stroke-width="2" stroke-linejoin="bevel"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_46_5371" x="19.3762" y="57.5773" width="183.212" height="116.775" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="6.53552" result="effect1_foregroundBlur_46_5371"/>
+</filter>
+<clipPath id="clip0_46_5371">
+<rect width="220" height="220" fill="white"/>
+</clipPath>
+<clipPath id="clip1_46_5371">
+<rect width="209.216" height="151.266" fill="white" transform="translate(-12 57.7639) rotate(-14.3248)"/>
+</clipPath>
+</defs>
+</svg>

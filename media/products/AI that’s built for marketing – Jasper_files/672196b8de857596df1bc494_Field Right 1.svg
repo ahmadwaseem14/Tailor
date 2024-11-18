@@ -1,0 +1,21 @@
+<svg width="103" height="103" viewBox="0 0 103 103" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M33.5146 51.2992L58.4126 8.17505L83.3105 51.2992L58.4126 94.4251L33.5146 51.2992Z" fill="#E6FAE3" stroke="#2F2B24" stroke-width="2" stroke-linejoin="bevel"/>
+<g filter="url(#filter0_f_1128_947)">
+<path d="M37.4668 51.3615L56.8266 17.8115L76.1864 51.3615L56.8266 84.9138L37.4668 51.3615Z" fill="#00B261"/>
+</g>
+<path d="M21 51.2992L45.8979 8.17505L70.7958 51.2992L45.8979 94.4251L21 51.2992Z" fill="#E6FAE3" stroke="#2F2B24" stroke-width="2" stroke-linejoin="bevel"/>
+<path d="M45.8965 8.51489L58.3446 8.51489" stroke="#2F2B24" stroke-width="2" stroke-linejoin="bevel"/>
+<path d="M70.7959 51.2991L83.244 51.2991" stroke="#2F2B24" stroke-width="2" stroke-linejoin="bevel"/>
+<path d="M45.9629 94.1455L58.4127 94.1455" stroke="#2F2B24" stroke-width="2" stroke-linejoin="bevel"/>
+<path d="M39.2856 34.7784L33.1986 45.3142C32.2671 46.9202 32.2671 49.5381 33.1986 51.1442L45.7259 72.826C46.6574 74.432 48.1671 74.432 49.0826 72.826L58.3014 56.8617C59.2329 55.2557 59.2329 52.6378 58.3014 51.0317L48.922 34.7784H39.2856Z" stroke="#2F2B23" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M39.2852 34.7786L43.2521 41.6525C43.7179 42.4716 44.4888 42.4716 44.9546 41.6525L48.9215 34.7786" stroke="#2F2B23" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M50.5614 50.0199C52.055 52.6218 52.055 56.8296 50.5614 59.4314C49.0678 62.0333 46.6266 62.0333 45.1329 59.4314C43.6393 56.8296 43.6393 52.6218 45.1329 50.0199C46.6266 47.4181 49.0678 47.4181 50.5614 50.0199Z" stroke="#2F2B23" stroke-width="2" stroke-linejoin="round"/>
+<path d="M51.8135 54.7092H54.7204" stroke="#2F2B23" stroke-width="2" stroke-linejoin="round"/>
+<defs>
+<filter id="filter0_f_1128_947" x="27.3335" y="7.67819" width="58.9864" height="87.369" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="5.06667" result="effect1_foregroundBlur_1128_947"/>
+</filter>
+</defs>
+</svg>

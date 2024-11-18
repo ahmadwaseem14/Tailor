@@ -1,0 +1,102 @@
+{% extends 'hbase.html' %}
+{% load static %}
+
+{% block content %}
+<!-- footer -->
+<div class="footer-area">
+    <div class="container">
+        <!-- Image centered at the top -->
+        <div class="footer-logo" style="text-align: center; margin-bottom: 40px;">
+            <img src="{% static 'img/d-02.png' %}" alt="Logo" style="max-width: 200px;margin: auto;">
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-box about-widget">
+                    <h2 class="widget-title">About us</h2>
+                    <p>At FANZER, we create custom garments tailored to your unique style. Our skilled tailors combine craftsmanship with modern techniques to deliver exceptional quality and perfect fits. Experience personalized service and discover the difference that expert tailoring can make.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-box get-in-touch">
+                    <h2 class="widget-title">Get in Touch</h2>
+                    <ul>
+                        <li>{{ home_address }}</li>
+                        <li>{{ home_phone_number }}</li>
+                        <li>{{ home_email }}</li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-box pages">
+                    <h2 class="widget-title">Pages</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Shop</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-box subscribe">
+                    <h2 class="widget-title">Subscribe</h2>
+                    <p>Subscribe to our mailing list to get the latest updates.</p>
+                    <form id="subscribe-form" action="{% url 'subscribe' %}" method="post">
+                        {% csrf_token %}
+                        <input type="email" name="email" placeholder="Email" required>
+                        <button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                    </form>
+                    <div id="message"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- end footer -->
+
+<!-- copyright -->
+<div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <p>Copyrights &copy; 2024- FANZER,  All Rights Reserved.<br>
+                    Developed by - <a href="https://browntech.co/">Brown Tech Int</a>
+                </p>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<script>document.getElementById('subscribe-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+    var formData = new FormData(this);
+    
+    fetch("{% url 'subscribe' %}", {
+        method: 'POST',
+        body: formData,
+        headers: {
+            'X-Requested-With': 'XMLHttpRequest'
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        const messageDiv = document.getElementById('message');
+        messageDiv.innerHTML = ''; // Clear previous messages
+        
+        if (data.success) {
+            messageDiv.innerHTML = data.message; // Display success message
+            this.reset(); // Reset the form if successful
+        } else {
+            messageDiv.innerHTML = data.message; // Display error message for email already existing
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        document.getElementById('message').innerHTML = "An error occurred. Please try again."; // General error message
+    });
+});</script>
+{% endblock %}
